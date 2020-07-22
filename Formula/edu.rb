@@ -2,21 +2,21 @@
 class Edu < Formula
   desc "Command line tool for managing school stuff"
   homepage "https://github.com/harrybrwn/edu"
-  version "0.0.2"
+  version "0.0.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/harrybrwn/edu/releases/download/v0.0.2/edu_0.0.2_MacOS_64-bit.tar.gz"
-    sha256 "65ed1570eb899e38d20132cb5aa7656e313f99584afb1643ad0ffe0b4d9745ce"
+    url "https://github.com/harrybrwn/edu/releases/download/v0.0.3/edu_0.0.3_MacOS_64-bit.tar.gz"
+    sha256 "fbf717239928669c11409687d1ceb29cc5660707f1afd216a43343b0d8ddf141"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/harrybrwn/edu/releases/download/v0.0.2/edu_0.0.2_Linux_64-bit.tar.gz"
-      sha256 "17c4d16221239252135319cc27980e7bc72ba6cafd684eacb3ddc48993fcff0a"
+      url "https://github.com/harrybrwn/edu/releases/download/v0.0.3/edu_0.0.3_Linux_64-bit.tar.gz"
+      sha256 "29a00f0fd4c9fd6c9b1023a1ffd923e1884f5992266d09ac05ef5f0d64b3f338"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/harrybrwn/edu/releases/download/v0.0.2/edu_0.0.2_Linux_arm64.tar.gz"
-        sha256 "652f00f7a82149019656191e6c9a6f8f03f3c9d871ad7b4cb983f831e7cf0c00"
+        url "https://github.com/harrybrwn/edu/releases/download/v0.0.3/edu_0.0.3_Linux_arm64.tar.gz"
+        sha256 "c4debd532c32c91b282fb853ce1f70b72315927f74638d8e9e6fb0628bdde7d8"
       else
       end
     end
